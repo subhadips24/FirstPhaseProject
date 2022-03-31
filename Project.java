@@ -122,9 +122,9 @@ public class Project {
 					System.out.println();
 			
 				}else{ 
-						if(i==1){
+								if(i==1){
 									System.out.println("Enter the File Name for Create");
-									
+										
 									String  FileForCreate=scanner.next();
 									genaretFile(FileForCreate);
 									System.out.println();
@@ -140,11 +140,12 @@ public class Project {
 									System.out.println("Enter the File Name for Serching");
 									
 								
-								String FileForSerching=scanner.next();
-								serchFile(FileForSerching);
-								System.out.println();
+									String FileForSerching=scanner.next();
+									serchFile(FileForSerching);
+									System.out.println();
 								}
 								else if(i==4) {
+									
 									System.out.println("Welcom in Main menu,..........");
 									System.out.println();
 									break;
@@ -152,9 +153,6 @@ public class Project {
 					
 					
 							
-							
-						
-								
 						}
 						
 						
