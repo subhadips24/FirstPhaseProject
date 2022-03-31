@@ -6,10 +6,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Project {
+	static  String pathMyPc="C:\\Users\\hp\\OneDrive\\Desktop\\JFD Codes\\src\\com\\Mphasis\\PracticeCode\\FileCreatation\\FileAll\\";
+	
 	//create File ....
 	public static void genaretFile(String fileName) throws IOException 
 	{
-		String filePath="C:\\Users\\hp\\OneDrive\\Desktop\\JFD Codes\\src\\com\\Mphasis\\PracticeCode\\FileCreatation\\FileAll\\";
+		String filePath=pathMyPc;
 		ArrayList<String> aList=new ArrayList<String>();
 		
 		System.out.println("enter the file name to create");
@@ -33,7 +35,7 @@ public class Project {
 	//Delete Function
 	
 	public static void deleteFile(String fileName) {
-		String path="C:\\Users\\hp\\OneDrive\\Desktop\\JFD Codes\\src\\com\\Mphasis\\PracticeCode\\FileCreatation\\FileAll\\";
+		String path=pathMyPc;
 
 		String finalfile=path+fileName;
 		File file=new File(finalfile);
@@ -44,7 +46,7 @@ public class Project {
 	//Searching Function
 	
 	public static void serchFile(String serchingFileName) {
-		String path="C:\\\\Users\\\\hp\\\\OneDrive\\\\Desktop\\\\JFD Codes\\\\src\\\\com\\\\Mphasis\\\\PracticeCode\\\\FileCreatation\\\\FileAll\\";
+		String path=pathMyPc;
 		File f=new File(path);
 		File filename[]=f.listFiles();
 		int count=0;
@@ -69,7 +71,7 @@ public class Project {
 	//Display File List...
 	
 	public  static void displayFile() {
-		String path="C:\\\\Users\\\\hp\\\\OneDrive\\\\Desktop\\\\JFD Codes\\\\src\\\\com\\\\Mphasis\\\\PracticeCode\\\\FileCreatation\\\\FileAll\\\\";
+		String path=pathMyPc;
 		File f=new File(path);
 		File filename[]=f.listFiles();
 		System.out.println("Your File List.......");
@@ -119,12 +121,8 @@ public class Project {
 					System.out.println("wo ho you not enter valid number....  ");
 					System.out.println();
 			
-				}else{
-					
-							
-							
-						
-								if(i==1){
+				}else{ 
+						if(i==1){
 									System.out.println("Enter the File Name for Create");
 									
 									String  FileForCreate=scanner.next();
@@ -152,6 +150,11 @@ public class Project {
 									break;
 								}
 					
+					
+							
+							
+						
+								
 						}
 						
 						
